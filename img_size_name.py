@@ -1,12 +1,12 @@
-# python Pro\resize_rename_strona.py
+# python (location)\resize_rename_strona.py
 #  change size & name --> All img (jpg, JPG, JPEG) from the folder
 
 from PIL import Image
 import os
 from datetime import datetime
 
-PATH_IMGS = 'PRO/Strona_archive/Archive/g-else-2//'
-PATH_IMGS_RESIZED = 'PRO/Strona_archive/Archive-Resized//'
+PATH_IMGS = '.../images//'
+PATH_IMGS_RESIZED = '.../images-Resized//'
 
 
 def resize():
@@ -18,7 +18,7 @@ def resize():
             new_height = 1000
             new_width  = int(new_height / im.height * im.width)
             im = im.resize((new_width, new_height), Image.LANCZOS)
-            im.save(PATH_IMGS_RESIZED + new_file_name + '-Oleksii-Pryimak' + '.jpg')
+            im.save(PATH_IMGS_RESIZED + new_file_name + '-TEXT' + '.jpg')
 
 
 if __name__ == "__main__":
