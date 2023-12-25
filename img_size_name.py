@@ -1,5 +1,5 @@
-# python (location)\resize_rename_strona.py
-#  change size & name --> All img (jpg, JPG, JPEG) from the folder
+# python (location)\img_size_name.py
+# change size & name --> All img (jpg, JPG, JPEG) from the folder
 
 from PIL import Image
 import os
@@ -18,7 +18,7 @@ def resize():
             new_height = 1000
             new_width  = int(new_height / im.height * im.width)
             im = im.resize((new_width, new_height), Image.LANCZOS)
-            im.save(PATH_IMGS_RESIZED + new_file_name + '-TEXT' + '.jpg')
+            im.save(PATH_IMGS_RESIZED + new_file_name + '-NEW_NAME' + '.jpg')
 
 
 if __name__ == "__main__":
