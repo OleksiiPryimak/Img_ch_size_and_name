@@ -5,11 +5,9 @@
 
 <h2>To run the script:</h2>
 
-<ol>
-  <li>Execute the following command: <code>python img_size_name.py</code>.</li>
-</ol>
+<p>Execute the following command: <code>python img_size_name.py</code>.</p>
 
-<h2>This will resize all images in the <code>images</code> directory and save the resized versions to the <code>images-Resized</code> directory.</h2>
+<p>This will resize all images in the <code>images</code> directory and save the resized versions to the <code>images-Resized</code> directory.</p>
 
 <h2>Example:</h2>
 
